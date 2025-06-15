@@ -30,6 +30,7 @@ jobs:
           tar -zcvf package.tar.gz my-app-2 todo-app-2 docker-compose.yml
           scp -r package.tar.gz server:~/
 
+
       - name: Execute Docker Compose
         run: |
           ssh server << 'EOF'
